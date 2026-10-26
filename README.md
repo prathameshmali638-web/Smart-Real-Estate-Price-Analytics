@@ -109,8 +109,7 @@ The notebook reads the dataset using the relative path `kc_house_data_NaN.csv`.
 - Examine outliers and validate unusual property records.
 - Add location-based and time-based comparisons.
 - Use a train/test split to build and evaluate a house-price prediction model.
-- Develop an interactive dashboard if interactive reporting is a project goal.
+- Develop an interactive dashboard if interactive reporting is a project goal
+- 
 
-## Author
 
-Add your name, GitHub profile, and contact details here.
