@@ -100,7 +100,7 @@ The data has missing values, just like real life. So the project shows the full 
 
 ## 🔍 Questions & Answers
 
-| ❓ Question | 📈 Chart | ✅ Answer |
+❓ Question  📈 Chart  ✅ Answer 
 |---|---|---|
 | How are prices spread out? | Histogram | Most houses are mid-priced, very few are luxury |
 | Does bigger size mean higher price? | Scatter plot | Yes, bigger houses usually cost more |
