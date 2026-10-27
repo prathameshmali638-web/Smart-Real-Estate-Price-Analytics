@@ -173,6 +173,3 @@ The data has missing values, just like real life. So the project shows the full 
 
 This project turns raw housing data with missing values into clean data and simple insights. It shows which things really affect house prices, which can help buyers, sellers and real estate companies make better decisions. 🏡
 
----
-
-⭐ If you like this project, give it a star!
