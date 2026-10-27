@@ -44,25 +44,31 @@ The data has missing values, just like real life. So the project shows the full 
 
 ## 🧰 Skills & Tools Used
 
-| 🛠️ Tools | 🧠 Skills |
-|---|---|
-| 🐍 Python | 🧹 Data Cleaning |
-| 🐼 Pandas | 🩹 Missing Value Treatment |
-| 🔢 NumPy | 📊 Exploratory Data Analysis |
-| 📈 Matplotlib | 🎨 Data Visualization |
-| 🎨 Seaborn | 💡 Business Insight Generation |
-| 📓 Jupyter Notebook | |
+**🛠️ Tools**
+
+- 🐍 Python
+- 🐼 Pandas
+- 🔢 NumPy
+- 📈 Matplotlib
+- 🎨 Seaborn
+- 📓 Jupyter Notebook
+
+**🧠 Skills**
+
+- 🧹 Data Cleaning
+- 🩹 Missing Value Treatment
+- 📊 Exploratory Data Analysis
+- 🎨 Data Visualization
+- 💡 Business Insight Generation
 
 ---
 
 ## 📂 Dataset Information
 
-| 📋 Detail | 📝 Info |
-|---|---|
-| 📄 File | `kc_house_data_NaN.csv` |
-| 🏘️ Rows | 21,613 houses |
-| 🧮 Columns | 22 |
-| 🎯 Target | `price` |
+- 📄 **File:** `kc_house_data_NaN.csv`
+- 🏘️ **Rows:** 21,613 houses
+- 🧮 **Columns:** 22
+- 🎯 **Target:** `price`
 
 **🔑 Key Features**
 
@@ -100,14 +106,14 @@ The data has missing values, just like real life. So the project shows the full 
 
 ## 🔍 Questions & Answers
 
-❓ Question  📈 Chart  ✅ Answer 
-|---|---|---|
-| How are prices spread out? | Histogram | Most houses are mid-priced, very few are luxury |
-| Does bigger size mean higher price? | Scatter plot | Yes, bigger houses usually cost more |
-| Do more bedrooms mean higher price? | Box plot | Yes, but growth slows after about 6 bedrooms |
-| Do bathrooms matter? | Scatter plot | Yes, they have a strong effect on price |
-| Is a waterfront house costlier? | Box plot | Yes, much costlier |
-| What is linked most with price? | Heatmap | Living area (`sqft_living`) |
+| ❓ Question | ✅ Answer |
+|---|---|
+| How are prices spread out? | Most houses are mid-priced, very few are luxury |
+| Does bigger size mean higher price? | Yes, bigger houses usually cost more |
+| Do more bedrooms mean higher price? | Yes, but growth slows after about 6 bedrooms |
+| Do bathrooms matter? | Yes, they have a strong effect on price |
+| Is a waterfront house costlier? | Yes, much costlier |
+| What is linked most with price? | Living area (`sqft_living`) |
 
 ---
 
