@@ -22,92 +22,118 @@ A Python-based exploratory data analysis project focused on understanding housin
 
 ## 📌 Project Overview
 
-Buying or selling a house is a big decision, and the price of a house depends on many things like its size, number of rooms, quality and location. But which of these things matter the most? 🤔
+Buying or selling a house is a big decision, and the price depends on many things like size, number of rooms, quality and location. But which of these things matter the most? 🤔
 
-This project looks at house sales data from **King County** and tries to answer one simple question:
+This project studies house sales data from **King County** to answer one simple question:
 
 > 💰 **What makes a house expensive?**
 
-### 🎯 Aim of the Project
-
-- 🔎 Find the main things that affect house prices
-- 🧹 Clean real-world data that has missing values
-- 📊 Show the results using easy charts
-- 💡 Share simple insights that anyone can understand
-
-### 🧭 What This Project Covers
-
-- 📥 **Understanding the data** – checking what information we have about each house
-- 🧹 **Cleaning the data** – fixing missing values and formats so the data is ready to use
-- 📊 **Exploring with charts** – looking at prices, size, bedrooms, bathrooms and waterfront
-- 💡 **Finding insights** – turning the charts into simple, useful conclusions
-
-### 👥 Who Can Use This?
-
-- 🧑‍🤝‍🧑 **Buyers** – to know what they are paying for
-- 🏷️ **Sellers** – to set a fair price for their house
-- 📈 **Investors** – to find homes with good value
-- 🏢 **Real estate companies** – to understand the market better
-- 🎓 **Students** – to learn basic data analysis step by step
-
-### ✨ Why This Project?
-
-Real data is rarely perfect. This dataset has missing values, just like real life. So this project is a good example of how to **clean data, explore it, and get useful answers** using only basic Python tools.
+The data has missing values, just like real life. So the project shows the full journey: **load → clean → explore → find insights**, using only basic Python tools.
 
 ---
 
-## 📊 About the Data
+## 🎯 Project Objectives
 
-- 📄 **File:** `kc_house_data_NaN.csv`
-- 🏘️ **Houses:** 21,613
-- 🧮 **Columns:** 22
-- 🎯 **What we study:** `price`
-
-Some important columns: `bedrooms`, `bathrooms`, `sqft_living`, `grade`, `waterfront`, `view`
-
----
-
-## 🛠️ Tools Used
-
-- 🐍 Python
-- 🐼 Pandas
-- 📈 Matplotlib
-- 🎨 Seaborn
-- 📓 Jupyter Notebook
+- 🧹 Clean the raw housing data
+- 🩹 Fix the missing values
+- 📊 Explore the data using simple charts
+- 🔎 Find the factors that affect house price
+- 💡 Share easy-to-understand insights
 
 ---
 
-## 🔄 What I Did
+## 🧰 Skills & Tools Used
 
-1. 📥 **Loaded** the data and checked it
-2. 🧹 **Cleaned** the data
-   - Removed the extra `Unnamed: 0` column
-   - Filled missing `bedrooms` and `bathrooms` values with the average
-   - Changed `date` to proper date format
-3. 📊 **Made charts** to understand the data
-4. 💡 **Wrote insights** from the charts
+| 🛠️ Tools | 🧠 Skills |
+|---|---|
+| 🐍 Python | 🧹 Data Cleaning |
+| 🐼 Pandas | 🩹 Missing Value Treatment |
+| 🔢 NumPy | 📊 Exploratory Data Analysis |
+| 📈 Matplotlib | 🎨 Data Visualization |
+| 🎨 Seaborn | 💡 Business Insight Generation |
+| 📓 Jupyter Notebook | |
+
+---
+
+## 📂 Dataset Information
+
+| 📋 Detail | 📝 Info |
+|---|---|
+| 📄 File | `kc_house_data_NaN.csv` |
+| 🏘️ Rows | 21,613 houses |
+| 🧮 Columns | 22 |
+| 🎯 Target | `price` |
+
+**🔑 Key Features**
+
+- 📐 **Size:** `sqft_living`, `sqft_lot`
+- 🏗️ **Structure:** `bedrooms`, `bathrooms`, `floors`
+- ⭐ **Quality:** `grade`, `condition`
+- 📍 **Location:** `zipcode`, `waterfront`, `view`
+- 🔨 **Construction:** `yr_built`, `yr_renovated`
+
+---
+
+## 🔄 Project Workflow
+
+### 1️⃣ Load & Understand the Data 📥
+- Loaded the CSV file using Pandas
+- Checked the shape, data types and summary of the data
+- Looked for missing values
+
+### 2️⃣ Clean the Data 🧹
+- Removed the extra `Unnamed: 0` column
+- Changed the `date` column to proper date format
+
+### 3️⃣ Fix Missing Values 🩹
+- Missing values were found in `bedrooms` and `bathrooms`
+- Filled them with the **average (mean)** of each column
+- Checked again: no missing values left ✅
+
+### 4️⃣ Explore with Charts 📊
+- 📊 Histogram
+- 🔵 Scatter plots
+- 📦 Box plots
+- 🔥 Correlation heatmap
 
 ---
 
 ## 🔍 Questions & Answers
 
-| ❓ Question | ✅ Answer |
-|---|---|
-| How are prices spread out? | Most houses are mid-priced, very few are luxury |
-| Does bigger size mean higher price? | Yes, bigger houses usually cost more |
-| Do more bedrooms mean higher price? | Yes, but only up to around 6 bedrooms |
-| Do bathrooms matter? | Yes, they have a strong effect on price |
-| Is a waterfront house costlier? | Yes, much costlier |
-| What is linked most with price? | Living area (`sqft_living`) |
+| ❓ Question | 📈 Chart | ✅ Answer |
+|---|---|---|
+| How are prices spread out? | Histogram | Most houses are mid-priced, very few are luxury |
+| Does bigger size mean higher price? | Scatter plot | Yes, bigger houses usually cost more |
+| Do more bedrooms mean higher price? | Box plot | Yes, but growth slows after about 6 bedrooms |
+| Do bathrooms matter? | Scatter plot | Yes, they have a strong effect on price |
+| Is a waterfront house costlier? | Box plot | Yes, much costlier |
+| What is linked most with price? | Heatmap | Living area (`sqft_living`) |
 
 ---
 
 ## 💡 Key Insights
 
-- 📐 Living area is the biggest price factor
-- 🚿 Bathrooms matter more than bedrooms
-- ⭐ Better quality (grade) means higher price
-- 🌊 Waterfront and good views make a house premium
+1. 📐 Living area is the biggest price factor
+2. 🚿 Bathrooms matter more than bedrooms
+3. ⭐ Better quality (grade) means higher price
+4. 🌊 Waterfront, view and renovation make a house premium
+
+---
+
+## 📈 Business Recommendations
+
+- 🏷️ **Sellers:** Show off big living space and good quality, they raise the price
+- 🧑‍🤝‍🧑 **Buyers:** Look at living area first, not just the number of bedrooms
+- 🌊 **Agents:** Advertise waterfront and view houses as premium homes
+- 📈 **Investors:** Quality and space are good things to look for
+
+---
+
+## ⚠️ Limitations
+
+- 🔍 Only basic analysis, no price prediction model
+- 📍 Location is studied in a simple way
+- 💸 Price changes over time (inflation) are not considered
 
 ---
 
@@ -127,7 +153,7 @@ Some important columns: `bedrooms`, `bathrooms`, `sqft_living`, `grade`, `waterf
 
 1. Install the libraries 📦
    ```bash
-   pip install pandas matplotlib seaborn jupyter
+   pip install pandas numpy matplotlib seaborn jupyter
    ```
 2. Open the notebook 📓
    ```bash
@@ -139,5 +165,8 @@ Some important columns: `bedrooms`, `bathrooms`, `sqft_living`, `grade`, `waterf
 
 ## ✅ Conclusion
 
-This project turns raw housing data into clean data and simple insights. It shows which things really affect house prices, which can help buyers, sellers and real estate companies. 🏡
+This project turns raw housing data with missing values into clean data and simple insights. It shows which things really affect house prices, which can help buyers, sellers and real estate companies make better decisions. 🏡
 
+---
+
+⭐ If you like this project, give it a star!
