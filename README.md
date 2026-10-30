@@ -188,4 +188,3 @@ Then pick **Kernel → Restart & Run All**. Keep the CSV file in the same folder
 
 This project turned raw housing data with a few missing values into clean data and simple answers. Size, bathrooms, quality and a waterfront location are what really move a house's price, which can help buyers, sellers and real estate companies make better decisions.
 
-If you found this useful, a ⭐ on the repo is always appreciated.
